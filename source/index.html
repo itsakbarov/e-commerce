@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mobile Store | e-commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander&family=Poppins&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/libraries/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./src/libraries/OwlCarousel/dist/assets/owl.theme.default.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header__wrapper container">
+            <div class="header__top">
+                <div class="left__info__block">
+                    <a href="tel:+998954000043">
+                        <i class="fas fa-phone-alt"></i> 95 400 00 43
+                    </a>
+                </div>
+                <div class="right__info__block">
+                    <ul>
+                        <li>
+                            <a href="#">Contacts</a>
+                        </li>
+
+                        <li>
+                            <a href="#">sale</a>
+                        </li>
+
+                        <li>
+                            <a href="#">offer</a>
+                        </li>
+
+                        <li>
+                            <a href="#">vacancies</a>
+                        </li>
+
+                        <li>
+                            <a href="#">our store</a>
+                        </li>
+
+                        <li>
+                            <a href="#">login / register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__middle">
+                <div class="logo__wrapper">
+                    <a href="#">
+                        <img src="https://ideastore.uz/storage/settings/October2019/jszzWyD5Dvl4Afy2v7w1.png" alt="">
+                    </a>
+                </div>
+                <div class="searchbar">
+                    <input type="text" class="searchbar" id="search" placeholder="search for products">
+                    <input type="button" value="search">
+                </div>
+                <div class="lovely__items">
+                    <div id="app">
+                        <el-badge :value="12" :max="10" class="item">
+                            <el-button id="button__badge" size="small">
+                                <i class="fas fa-heart"></i>
+                            </el-button>
+                        </el-badge>
+                        <el-badge :value="3" :max="10" class="item">
+                            <el-button id="button__badge" size="small">
+                                <i class="fa fa-shopping-cart"></i>
+                            </el-button>
+                        </el-badge>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="bottom__left">
+                    <a class="categories__btn" href="#">
+                        All Categories 
+                      <i class="fa fa-bars"></i>
+                       </a>
+                    <div class="categories__menu">
+                        <ul>
+                            <li class="mobile__header">
+                                <a href="#">
+                        Mobile phones
+                  <i class="fa fa-chevron-right"></i>
+                  <div class="mobile__dropdown">
+                    <a href="#">Apple</a>
+                                <a href="#">Samsung</a>
+                                <a href="#">LG</a>
+                                <a href="#">LG</a>
+                                <a href="#">LG</a>
+                                <a href="#">Artel</a>
+                    </div>
+                    </a> 
+
+                    
+                    </li>
+                    <li class="smartphones"><a href="#">
+                  Smart phones
+                  <i class="fa fa-chevron-right"></i>
+                  <div class="smartPhones__dropdown">
+                    <a href="#">Nokia</a>
+                        <a href="#">Artel</a>
+                        <a href="#">Simens</a>
+                        <a href="#">Sony</a>
+                </div>
+                </a>
+                </li>
+                <li class="accessories"><a href="#">
+                  Accessories
+                  <i class="fa fa-chevron-right"></i>
+                <div class="accessories__dropdown">
+                  <a href="#">Headphones</a>
+                    <a href="#">Earphones</a>
+                    <a href="#">External batteries</a>
+                    <a href="#">Cases</a>
+                    <a href="#">Chargers</a>
+                    <a href="#">Screen protector</a>
+            </div>
+            </a>
+            </li>
+            <li class="retired"><a href="#"> Retired phones
+                  <i class="fa fa-chevron-right"></i>
+                <div class="retired__dropdown">
+                    <a href="#">Nokia(2000~2010)</a>
+                <a href="#">samsung(2005~208)</a>
+                <a href="#">Sony(1998~2015)</a>
+                <a href="#">Moto(1995~2010)</a>
+        </div>
+        </a>
+        </li>
+        <li><a href="#">
+                  Replacement
+                  <i class="fa fa-chevron-right"></i>
+                </a></li>
+        </ul>
+        </div>
+        </div>
+        <div class="bottom__right">
+            <ul>
+                <li>
+                    <a href="">For you </a>
+                    <a href="">sale</a>
+                    <div class="dropdown_element">
+                        <a class="dropdown__link" href="#">
+                    refurished phone
+                    <i class="fas fa-chevron-down"></i>
+                    <div class="dropdown__menu">
+                      <ul>
+                        <li><a href="">samsung</a></li>
+                <li><a href="">oppo</a></li>
+                <li><a href="">vivo</a></li>
+                <li><a href="">apple</a></li>
+                <li><a href="">lg</a></li>
+                <li><a href="">nokia</a></li>
+            </ul>
+            </div>
+            </a>
+        </div>
+        <a href="">cellular phones</a>
+        <a href="">accessories</a>
+        </li>
+        </ul>
+        </div>
+        </div>
+    </header>
+</div>
+
+  
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//unpkg.com/vue/dist/vue.js"></script>
+    <script src="//unpkg.com/element-ui@2.14.0/lib/index.js"></script>
+    <script src="./src/libraries/OwlCarousel/dist/owl.carousel.js"></script>
+    <script src="./src/libraries//OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="./src/scripts/animatedInput.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./src/scripts/script.js"></script>
+    
+
+</body>
+
+</html>
