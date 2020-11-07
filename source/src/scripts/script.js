@@ -10,7 +10,7 @@ var Ctor = Vue.extend(Main)
 
 new Ctor().$mount('#app');
 
-$(document).ready(function() {
+$(document).ready(function () {
     console.log('document works!!!');
 
     var owlTeste = $('.owl-carousel');
@@ -37,18 +37,18 @@ $(document).ready(function() {
         },
     });
 })
-    window.onscroll = function() {
-      myFunction()
-    };
-    var hero = document.querySelector('.site_hero')
-    var header = document.querySelector('header')
-    var body = document.querySelector("body");
-    var sticky = header.offsetHeight/2;
+window.onscroll = function () {
+    myFunction()
+};
+var hero = document.querySelector('.site_hero')
+var header = document.querySelector('header')
+var body = document.querySelector("body");
+var sticky = header.offsetHeight / 2;
 
-    function myFunction() {
-      if (window.pageYOffset > sticky) {
+function myFunction() {
+    if (window.pageYOffset > sticky) {
         header.classList.add("sticky");
-      } else {
+    } else {
         header.classList.remove("sticky");
-      }
     }
+}
