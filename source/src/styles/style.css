@@ -57,7 +57,7 @@ header {
     justify-content: space-between;
 }
 
-.header__middle input[type=text] {
+header input[type=text] {
     font-family: 'Poppins', sans-serif;
     padding: 6px 11px;
     width: 80%;
@@ -66,11 +66,11 @@ header {
     outline: none;
 }
 
-.header__middle input[type=text]:focus {
+header input[type=text]:focus {
     background-color: rgb(216, 213, 213);
 }
 
-.header__middle input[type=button] {
+header input[type=button] {
     font-family: 'Poppins', sans-serif;
     padding: 6px 11px;
     width: 15%;
@@ -85,6 +85,77 @@ header {
     border-radius: 0 3px 3px 0;
     -webkit-transition: .3s;
     transition: .3s;
+}
+
+.sticky_header input[type=text] {
+    font-family: 'Poppins', sans-serif;
+    padding: 6px 11px;
+    width: 180%;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    outline: none;
+}
+
+.searchbar-fixed {
+    display: flex;
+    width: 100%;
+}
+
+.sticky_header input[type=text]:focus {
+    background-color: rgb(216, 213, 213);
+}
+
+.sticky_header input[type=button] {
+    font-family: 'Poppins', sans-serif;
+    padding: 6px 11px;
+    width: 15%;
+    font-size: 12px;
+    text-transform: uppercase;
+    background: #dc1373;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    padding: 0 20px;
+    min-width: 128px;
+    border-radius: 0 3px 3px 0;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.sticky_header {
+    position: fixed;
+    display: flex;
+    background: #232f3ed5;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    padding: 12px 0;
+    display: none;
+    z-index: 3;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header.sticky+.sticky_header {
+    display: block;
+}
+
+.sticky_header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sticky_header .container .sticky_header_navbar {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sticky_header .container .sticky_header_logo {
+    width: 50%;
 }
 
 #button__badge {
@@ -130,47 +201,60 @@ header {
 font-family: 'Poppins', sans-serif;
 font-family: 'Ubuntu', sans-serif; */
 
-.header_bottom{
+.header_bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .header_bottom .right_side {
     display: flex;
     justify-content: space-between;
     position: relative;
     align-items: center
 }
+
 .header_bottom .right_side .bottom-links {
     color: #fff;
-    padding: 10px 10px;
     display: inline-block;
+    display: inline-block;
+    color: inherit;
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 15px;
+    background: #232f3e;
+    font-family: Ubuntu;
+    text-transform: capitalize;
 }
 
 
 /* header bottom dropdown section  */
 
-.dropdown_menu-left{
+.dropdown_menu-left {
     position: absolute;
     display: none;
-    top: 55px;
+    position: absolute;
+    display: none;
+    top: 49px;
     transform-origin: top center;
-    left: 0;
+    left: 45px;
     perspective: 1000px;
     animation: growDown 700ms ease-in-out forwards;
     z-index: 2;
 }
-.dropdown-left:hover .dropdown_menu-left{
+
+.dropdown-left:hover .dropdown_menu-left {
     display: block;
 }
-.dropdown_menu-left a:first-child{
+
+.dropdown_menu-left a:first-child {
     padding: 0;
 }
-.drop-btn{
+
+.drop-btn {
     padding: 15px 0;
     display: inline-block;
-}
-.dropdown_menu-left a{
+    color: inherit;
     display: block;
     color: white;
     padding: 15px 40px 15px 15px;
@@ -179,7 +263,29 @@ font-family: 'Ubuntu', sans-serif; */
     text-transform: capitalize;
 }
 
-.dropdown_menu-left a:hover{
+.dropdown-left a {
+    padding: 15px 0;
+    display: inline-block;
+    color: inherit;
+    display: block;
+    color: white;
+    /* padding: 15px 40px 15px 15px; */
+    background: #232f3e;
+    font-family: Ubuntu;
+    text-transform: capitalize;
+}
+
+.dropdown_menu-left a {
+    text-transform: capitalize;
+    display: block;
+    color: white;
+    padding: 15px 40px 15px 15px;
+    background: #232f3e;
+    font-family: Ubuntu;
+    text-transform: capitalize;
+}
+
+.dropdown_menu-left a:hover {
     background: #232b35;
     transition: 0.4s;
 }
@@ -195,70 +301,317 @@ font-family: 'Ubuntu', sans-serif; */
     animation: downOut 300ms ease-in-out forwards;
     transform-origin: center center;
 }
-.dropdown{
+
+.dropdown {
     display: inline-block;
     position: relative;
 }
-.dropdown-menu-left{
+
+.dropdown-menu-left {
     position: absolute;
     bottom: 0;
 }
-.dropdowbn_btn .fa-bars{
+
+.dropdowbn_btn .fa-bars {
     margin-left: 15px;
 
 }
-.dropdown_menu a{
+
+.dropdown_menu a {
     display: block;
     color: #fff;
     font-family: Ubuntu;
     width: max-content;
     padding: 15px 40px 15px 15px;
     background: #232f3e;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.dropdown_menu a:hover{
+
+.dropdown_menu a:hover {
     background: #232b35;
     transition: 0.4s;
 }
-.dropdown_menu a:nth-child(2){
+
+.dropdown_menu a:nth-child(2) {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
-.dropdown_menu a:nth-child(6){
+
+.dropdown_menu a:nth-child(6) {
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-.dropdown .dropdowbn_btn{
+
+.dropdown .dropdowbn_btn {
     color: #fff;
     font-family: Ubuntu;
     display: flex;
     align-items: center;
-    padding:  15px 0 ;
+    padding: 15px 0;
     display: inline-block;
 }
+
 .dropdown:hover .dropdown_menu--animated {
     display: block;
 }
+
 .dropdown:hover .dropdown_menu.column {
     display: block;
 }
-.dropdown_menu--animated .fa-caret-right{
+
+.dropdown_menu--animated .fa-caret-right {
     margin-left: 15px;
 }
-.dropdown_menu--animated a:hover .fa-caret-right{
+
+.dropdown_menu--animated a:hover .fa-caret-right {
     transform: translateX(7px);
     transition: 0.4s all ease-in-out;
 }
-.site_main{
+
+.site_main {
     padding-top: 15px;
 }
-.owl-carousel img{
+
+.owl-carousel img {
     width: 1200px;
-    height: 500px;
+    height: 400px;
     object-fit: cover;
-    object-position: center;
+    object-position: center right;
     border-radius: 5px;
 }
+
+
+.drop-btn .fa-chevron-down {
+    font-size: 12px;
+    transition: all 0.4s ease-in-out;
+}
+
+.drop-btn:hover .fa-chevron-down {
+    transform: translateY(5px);
+}
+
+/* the end */
+
+section.items {
+    height: 200vh;
+}
+
+/* info blog container */
+.info_blog_wrapper {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(170, 170, 170, 0.312);
+    padding: 12px 8px;
+    border-radius: 8px
+}
+
+.info_blog_wrapper .info_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 8px;
+    position: relative;
+    align-items: center;
+}
+
+.info_blog_wrapper .info_item h3 {
+    font-size: 16px;
+    font-family: 'Ubuntu';
+    font-weight: normal;
+    width: 85%;
+    flex-basis: content;
+    color: rgb(46, 46, 46);
+}
+
+.info_blog_wrapper .info_item img {
+    margin-right: 12px;
+}
+
+.info_blog_wrapper .info_item::before {
+    content: '';
+    height: 50px;
+    width: 1.5px;
+    background: #232f3e62;
+    position: absolute;
+    left: -25px;
+    top: 7px;
+    border-radius: 3px;
+    bottom: 0;
+}
+
+.info_blog_wrapper .info_item:first-child::before {
+    display: none;
+}
+
+.items-section .hot_items {
+    font-family: 'Ubuntu';
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 3;
+    color: rgb(63, 63, 63);
+    position: relative;
+}
+
+.items-section .hot_items::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    width: 90%;
+    height: 2px;
+    background: #aaa;
+}
+
+.products_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.product-info {
+    position: relative
+}
+
+.products_container .product {
+    display: inline-block;
+    padding: 20px 25px 15px 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 250px;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 45px;
+}
+
+.products_container .product img {
+    width: 100%;
+    height: 284px;
+    object-fit: contain;
+
+}
+
+.product .icons {
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    display: flex;
+}
+
+.product .icons i {
+    height: 40px;
+    margin-right: 8px;
+    width: 40px;
+    display: flex;
+    color: #dc1373;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0px 2px 10px #817b7b;
+    perspective: 1000px;
+    font-size: 14px;
+    transform: translateY(150px);
+    opacity: 0;
+}
+
+.product .icons i:hover {
+    background: #dc1373;
+    color: white;
+    transition: 0.4s;
+}
+
+.product:hover .icons i {
+    animation: jumpingIcons 500ms forwards ease-in-out;
+}
+
+
+
+
+.products_container .product:hover {
+    box-shadow: 0px 12px 21px rgba(0, 0, 0, 0.1);
+}
+
+.products_container .product:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.products_container .product img {
+    width: 130px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.products_container .product .product_title {
+    font-size: 16px;
+    font-family: 'Ubuntu';
+    color: rgb(46, 46, 46);
+    margin-bottom: 16px;
+}
+
+.products_container .product .sort_name {
+    font-size: 12px;
+    font-family: 'Ubuntu';
+    background: #232f3e;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 5px 8px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 12px;
+
+}
+
+.products_container .product .price {
+    display: inline-block;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.products_container .product .price * {
+    display: block;
+}
+
+.products_container .product .price {
+    margin-left: 20%;
+    color: black;
+    font-family: Ubuntu;
+}
+
+.products_container .product del {
+    text-decoration: line-through;
+    font-size: 13px;
+    text-align: end;
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -320,17 +673,83 @@ font-family: 'Ubuntu', sans-serif; */
 }
 
 @keyframes growDown {
-  0% {
-      opacity: 0;
-      transform: rotateX(-90deg);
-  }
+    0% {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
 
-  50% {
-      transform: rotateX(-20deg);
-  }
+    50% {
+        transform: rotateX(-20deg);
+    }
 
-  100% {
-      opacity: 1;
-      transform: rotateX(0deg);
-  }
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+@keyframes jumpingIcons {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+#animated-example {
+    background: #dc1373;
+    height: 50px;
+    margin: 20px auto;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.7);
+}
+
+#animated-example .fa-phone-alt {
+    color: #fff;
+    font-size: 20px;
+}
+
+.animated {
+    animation-duration: 1.4s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-25px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.bounce {
+    animation-name: bounce;
+}
+
+.bell_wrapper {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 }

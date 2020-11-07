@@ -14,10 +14,11 @@
   <link rel="stylesheet" href="./src/libraries/OwlCarousel/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="./src/libraries/OwlCarousel/dist/assets/owl.theme.default.css">
   <link rel="stylesheet" href="./src/styles/style.css">
+
 </head>
 
 <body>
-  <header>
+  <header class="">
     <div class="header__wrapper container">
       <div class="header__top">
         <div class="left__info__block">
@@ -110,6 +111,7 @@
           <a class="bottom-links" href="#">sale!</a>
           <div class="dropdown-left">
             <a class="drop-btn" href="#">dropdown
+              <i class="fa fa-chevron-down"></i>
               <div class="dropdown_menu-left column">
                 <a href="#" class="dropdown_item">Item name</a>
                 <a href="#" class="dropdown_item">Item name</a>
@@ -126,22 +128,263 @@
         </div>
       </div>
   </header>
-
+  <div class="sticky_header">
+    <div class="container">
+      <div class="sticky_header_logo">
+        <a href="#!"><img src="https://ideastore.uz/storage/settings/October2019/jszzWyD5Dvl4Afy2v7w1.png" alt=""></a>
+      </div>
+      <div class="sticky_header_navbar">
+        <div class="searchbar-fixed">
+          <input type="text" class="searchbar" id="search" placeholder="search for products">
+          <input type="button" value="search">
+        </div>
+      </div>
+    </div>
+  </div>
 
   <main class="site_main">
     <section class="site_hero container">
       <div class="owl-carousel">
-        <div class="item"><a href="#!"><img
-              src="https://images.unsplash.com/photo-1603568301602-3924e87dc8d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+        <div class="item"><a href="#!"><img src="https://hopshop.uz/images/promo/450/PC_ru_Sienna_lifting.png"
               alt=""></a></div>
-        <div class="item"><a href="#!"><img
-              src="https://images.unsplash.com/photo-1604435317654-a4d3ab2e3dc2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
-              alt=""></a></div>
-        <div class="item"><a href="#!"><img
-              src="https://images.unsplash.com/photo-1549799521-b6b4c1aaf2ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80"
-              alt=""></a></div>
-                
+        <div class="item"><a href="#!"><img src="https://hopshop.uz/images/promo/451/PC_ru_silver.png" alt=""></a></div>
+        <div class="item"><a href="#!"><img src="https://hopshop.uz/images/promo/449/Frame_1__15_.jpg" alt=""></a></div>
+        <div class="item"><a href="#!"><img src="https://hopshop.uz/images/promo/450/PC_ru_Sienna_women.png" alt=""></a>
         </div>
+
+      </div>
+      <div class="bell_wrapper">
+        <a href="tel:+998954000043" id="animated-example" class=" animated bounce">
+          <i class="fa fa-phone-alt"></i>
+        </a>
+      </div>
+    </section>
+    <section class="section_info">
+      <div class="info_blog_wrapper container">
+
+        <div class="info_item">
+          <img src="./src/images/truck.svg" alt="">
+          <div class="info_text">
+            <h3 class="info_title">
+              Sizga eng qulay xizmatlarni taklif etamiz!
+            </h3>
+          </div>
+        </div>
+
+        <div class="info_item">
+          <img src="./src/images/delivery.svg" alt="">
+          <div class="info_text">
+            <h3 class="info_title">
+              Tezkor va mutlaqo bepul yetkazib berish xizmati!
+            </h3>
+          </div>
+        </div>
+
+        <div class="info_item">
+          <img src="./src/images/return.svg" alt="">
+          <div class="info_text">
+            <h3 class="info_title">
+              Nosoz maxsulotni bir zumda almashtirish!
+            </h3>
+          </div>
+        </div>
+
+        <div class="info_item">
+          <img src="./src/images/card.svg" alt="">
+          <div class="info_text">
+            <h3 class="info_title">
+              Sizga eng qulay to'lov xizmatlari!
+            </h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="items-section">
+      <div class="products-wrapper container">
+        <h1 class="hot_items">
+          Hot Protucts
+        </h1>
+        <div class="products_container">
+          <div class="product">
+            <a href="#!" class="">
+              <img src="./src/images/phone.jpg" alt="">
+              <div class="icons">
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-cart-plus"></i>
+              </div>
+              <div class="product-info">
+                <h3 class="product_title">
+                  Samsung Galaxy S20
+                </h3>
+                <span class="sort_name">
+                  samsung
+                </span>
+                <!-- <br> -->
+                <span class="price">
+                  <del>12.000.000</del>
+                  10.999.000
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="#!" class="">
+              <img src="./src/images/phone2.jpg" alt="">
+              <div class="icons">
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-cart-plus"></i>
+              </div>
+              <div class="product-info">
+                <h3 class="product_title">
+                  Xiaomi mi 8
+                </h3>
+                <span class="sort_name">
+                  Xiaomi
+                </span>
+                <!-- <br> -->
+                <span class="price">
+                  <del>2.000.000</del>
+                  999.000
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="#!" class="">
+              <img src="./src/images/phone3.jpg" alt="">
+              <div class="icons">
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-cart-plus"></i>
+              </div>
+              <div class="product-info">
+                <h3 class="product_title">
+                  Samsung Galaxy A71
+                </h3>
+                <span class="sort_name">
+                  samsung
+                </span>
+                <!-- <br> -->
+                <span class="price">
+                  <del>4.000.000</del>
+                  2.999.000
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="#!" class="">
+              <img src="./src/images/phone4.jpg" alt="">
+              <div class="icons">
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-cart-plus"></i>
+              </div>
+              <div class="product-info">
+                <h3 class="product_title">
+                  Samsung Galaxy A51
+                </h3>
+                <span class="sort_name">
+                  samsung
+                </span>
+                <!-- <br> -->
+                <span class="price">
+                  <del>3.000.000</del>
+                  3.999.000
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="#!" class="">
+              <img src="./src/images/phone5.jpg" alt="">
+              <div class="icons">
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-cart-plus"></i>
+              </div>
+              <div class="product-info">
+                <h3 class="product_title">
+                  Apple 11 pro
+                </h3>
+                <span class="sort_name">
+                  Apple
+                </span>
+                <!-- <br> -->
+                <span class="price">
+                  <del>14.000.000</del>
+                  10.999.000
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="#!" class="">
+              <img src="./src/images/phone6.jpg" alt="">
+              <div class="icons">
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-cart-plus"></i>
+              </div>
+              <div class="product-info">
+                <h3 class="product_title">
+                  HUAWEI Nova 3
+                </h3>
+                <span class="sort_name">
+                  samsung
+                </span>
+                <!-- <br> -->
+                <span class="price">
+                  <del>2.000.000</del>
+                  999.000
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="#!" class="">
+              <img src="./src/images/phone7.jpg" alt="">
+              <div class="icons">
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-cart-plus"></i>
+              </div>
+              <div class="product-info">
+                <h3 class="product_title">
+                  Samsung Galaxy A11
+                </h3>
+                <span class="sort_name">
+                  samsung
+                </span>
+                <!-- <br> -->
+                <span class="price">
+                  <del>1.000.000</del>
+                  999.000
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="#!" class="">
+              <img src="./src/images/phone8.jpg" alt="">
+              <div class="icons">
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-cart-plus"></i>
+              </div>
+              <div class="product-info">
+                <h3 class="product_title">
+                  Samsung Galaxy Note 10ultra
+                </h3>
+                <span class="sort_name">
+                  samsung
+                </span>
+                <!-- <br> -->
+                <span class="price">
+                  <del>12.000.000</del>
+                  10.999.000
+                </span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
     </section>
   </main>
 
@@ -151,7 +394,7 @@
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
   <script src="//unpkg.com/vue/dist/vue.js"></script>
   <script src="//unpkg.com/element-ui@2.14.0/lib/index.js"></script>
- <script src="./src/libraries/OwlCarousel/dist/owl.carousel.min.js"></script>
+  <script src="./src/libraries/OwlCarousel/dist/owl.carousel.min.js"></script>
   <script src="./src/scripts/animatedInput.js"></script>
   <script src="./src/scripts/script.js"></script>
 

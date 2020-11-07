@@ -37,3 +37,18 @@ $(document).ready(function() {
         },
     });
 })
+    window.onscroll = function() {
+      myFunction()
+    };
+    var hero = document.querySelector('.site_hero')
+    var header = document.querySelector('header')
+    var body = document.querySelector("body");
+    var sticky = header.offsetHeight/2;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
