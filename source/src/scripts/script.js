@@ -80,71 +80,70 @@ function myFunction() {
 
 var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
 
-var x = setInterval(function() {
-    
+var x = setInterval(function () {
 
-  var now = new Date().getTime();
 
-  var distance = countDownDate - now;
+    var now = new Date().getTime();
 
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    var distance = countDownDate - now;
 
-  document.querySelector(".counter").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  if (distance < 0) {
-    clearInterval(x);
-    document.querySelector(".counter").innerHTML = "EXPIRED";
-  }
+    document.querySelector(".counter").innerHTML = days + "d " + hours + "h " +
+        minutes + "m " + seconds + "s ";
+
+    if (distance < 0) {
+        clearInterval(x);
+        document.querySelector(".counter").innerHTML = "EXPIRED";
+    }
 }, 1000);
 
 
 
 var countDownDate2 = new Date("Dec 5, 2020 4:31:55").getTime();
 
-var x = setInterval(function() {
+var x = setInterval(function () {
 
-  var now = new Date().getTime();
+    var now = new Date().getTime();
 
-  var distance = countDownDate2 - now;
+    var distance = countDownDate2 - now;
 
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.querySelector(".counter2").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+    document.querySelector(".counter2").innerHTML = days + "d " + hours + "h " +
+        minutes + "m " + seconds + "s ";
 
-  if (distance < 0) {
-    clearInterval(x);
-    document.querySelector(".counter2").innerHTML = "EXPIRED";
-  }
+    if (distance < 0) {
+        clearInterval(x);
+        document.querySelector(".counter2").innerHTML = "EXPIRED";
+    }
 }, 1000);
 
 
 var countDownDate3 = new Date("Dec 19, 2022 11:17:21").getTime();
 
-var x = setInterval(function() {
+var x = setInterval(function () {
 
-  var now = new Date().getTime();
+    var now = new Date().getTime();
 
-  var distance = countDownDate3 - now;
+    var distance = countDownDate3 - now;
 
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.querySelector(".counter3").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+    document.querySelector(".counter3").innerHTML = days + "d " + hours + "h " +
+        minutes + "m " + seconds + "s ";
 
-  if (distance < 0) {
-    clearInterval(x);
-    document.querySelector(".counter3").innerHTML = "EXPIRED";
-  }
+    if (distance < 0) {
+        clearInterval(x);
+        document.querySelector(".counter3").innerHTML = "EXPIRED";
+    }
 }, 1000);
-
