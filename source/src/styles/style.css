@@ -400,7 +400,7 @@ section.items {
 .info_blog_wrapper {
     display: flex;
     justify-content: space-between;
-    background: rgba(170, 170, 170, 0.312);
+    background: rgba(170, 170, 170, 0.212);
     padding: 12px 8px;
     border-radius: 8px
 }
@@ -443,12 +443,18 @@ section.items {
 }
 
 .items-section .hot_items {
-    font-family: 'Ubuntu';
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: normal;
+    margin-bottom: 25px;
     line-height: 3;
     color: rgb(63, 63, 63);
     position: relative;
+    color: #3b3b3b;
+    font-size: 2.8125em;
+    font-family: "roboto",
+        Arial,
+        Helvetica,
+        sans-serif;
 }
 
 .items-section .hot_items::after {
@@ -481,6 +487,7 @@ section.items {
     width: 250px;
     position: relative;
     cursor: pointer;
+    transition: all 0.4s ease-in-out;
     margin-bottom: 45px;
 }
 
@@ -587,27 +594,366 @@ section.items {
     opacity: 0.7;
 }
 
+/*  */
+.deals-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+.deal-name {
+    line-height: 1;
+    font-weight: 300;
+    margin: 1em 0;
+    color: #3b3b3b;
+    font-size: 2.8125em;
+    font-family: "roboto",
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+.deals-wrapper .deal {
+    padding: 14px 25px 32px;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 4px 1px 1px;
+    border-color: #f80320 #e3e3e3 #e3e3e3;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    max-width: 20em;
+    color: #232b35;
+    color: #3b3b3b;
+    font-family: "roboto",
+        Arial,
+        Helvetica,
+        sans-serif;
+    display: block;
+    transition: 0.3s all;
+
+
+}
+
+.deals-wrapper .deal:hover {
+    box-shadow: 0px 12px 21px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 12px 21px rgba(0, 0, 0, 0.1);
+}
+
+.deals-wrapper .deal:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.deal .countdown {
+    text-align: center;
+    margin-bottom: 15px;
+    position: relative;
+    font-family: 'Hind Madurai',
+        sans-serif;
+    font-size: 14px;
+}
+
+.label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #01295aa4;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: White;
+    font-weight: 900;
+    font-size: 24px;
+    transform: translateY(250px);
+    transition: 0.4s all;
+    opacity: 0;
+}
+
+.deal:hover .label {
+    transform: translateY(90px);
+    opacity: 1;
+}
+
+.label h3 {
+    color: white;
+    text-transform: capitalize;
+    font-family: 'ubuntu';
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.deal .countdown #counter {
+    color: red;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.deal .deal-heading {
+    font-family: 'Hind Madurai',
+        sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.deal .deal-price {
+    display: flex;
+    flex-direction: column;
+    color: #f8600c;
+    text-align: center;
+    font-family: "roboto",
+        Arial,
+        Helvetica,
+        sans-serif;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.deal .deal-price .prev-price {
+    text-decoration: line-through;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.deal .view-deal {
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    display: block;
+    font-size: .9375em;
+    padding: .4375em 2em;
+    margin: 0 auto;
+    font-size: 1.0625em;
+    cursor: pointer;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+.deal .view-deal:hover {
+    background: rgba(19, 19, 19, 0.972);
+}
+
+.deal .deal-img {
+    display: block;
+    margin: 0 auto 25px auto;
+}
+
+.best-offers {
+    margin-bottom: 110px;
+    border-top: 2px solid #232b353f;
+}
+
+.best-offers .offer-title {
+    line-height: 3;
+    font-family: 'Hind Madurai';
+    font-weight: normal;
+    font-size: 3rem;
+    position: relative;
+}
+
+.best-offers .offer-title:before {
+    content: '';
+    width: 90%;
+    height: 2px;
+    position: absolute;
+    bottom: 40px;
+    /* left: 0; */
+    right: 0;
+    background: #aaa;
+}
+
+.offer-carousel .item img {
+    object-fit: contain;
+    display: block;
+    overflow: hidden;
+}
 
 
 
+.offer-carousel .item {
+    margin: 0 55px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+    padding: 30px 15px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 250px;
+}
+
+.offer-carousel .item-desc {
+    position: absolute;
+    background: rgba(80, 91, 182, 0.322);
+    bottom: 0;
+    left: 0;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 0;
+    border-radius: 10px;
+    right: 0;
+    margin: auto;
+    transition: 0.4s;
+}
+
+.item-desc .item_name {
+    padding: 30px 10px;
+    font-family: 'Hind Madurai'
+
+}
+
+.item-desc .item_text {
+    padding: 30px 10px;
+    font-family: 'Hind Madurai';
+
+}
+
+.item-desc .item_text a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: underline;
+
+}
+
+.offer-carousel .item:hover .item-desc {
+    height: 100%;
+}
+
+.subscribe {
+    background: #232f3e;
+}
+
+.subscribe-wrapper {
+    display: flex;
+    align-items: center
+}
+
+.subscribe-wrapper .left {
+    width: 50%;
+}
+
+.subscribe-wrapper .left h1 {
+    font-weight: 600;
+    font-family: 'Hind Madurai';
+    font-size: 32px;
+    text-transform: capitalize;
+    color: white;
+    padding: 25px 0;
+}
+
+.subscribe-wrapper .right {
+    font-family: 'Hind Madurai';
+    width: 50%;
+}
+
+.subscribe-wrapper .right form input {
+    font-family: 'Hind Madurai';
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    width: 80%;
+}
+
+
+.subscribe-wrapper .right form button {
+    font-family: 'Hind Madurai';
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    background: #dc1373;
+    color: white;
+
+
+}
+
+.site_footer .container {
+    padding-top: 3%;
+    display: flex;
+}
+
+.img_containers img {
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.site_footer .footer_left {
+    width: 30%;
+}
+
+.site_footer .footer_left .fhead a {
+    margin-bottom: 35px;
+    display: block;
+}
+
+.site_footer .footer_left .fhead .payment-methods {
+    font-family: 'Hind Madurai';
+    line-height: 3;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+
+.img_containers {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 70%;
+}
 
 
 
+.footer_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 70%;
+}
 
+.footer_right .list_item h3 {
+    font-family: 'Hind Madurai';
+    line-height: 3;
+    font-size: 16px;
+    text-transform: capitalize;
 
+}
 
+.footer_right .list_item a {
+    font-family: 'Hind Madurai';
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgb(117, 117, 117);
+    cursor: pointer;
+}
 
+.footer_right .list_item.orange a {
+    color: #dc1373;
+    font-weight: 500;
+}
 
+.map * {
+    border: none;
+    border-radius: 5px;
+}
 
-
-
-
-
-
-
-
-
-
+.map h3 {
+    font-family: 'Hind Madurai';
+    line-height: 3;
+    font-size: 16px;
+    text-transform: capitalize;
+}
 
 
 
