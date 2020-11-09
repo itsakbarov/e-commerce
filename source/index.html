@@ -11,6 +11,7 @@
     crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css2?family=Grandstander&family=Poppins&family=Ubuntu&display=swap"
     rel="stylesheet">
+  <link type="icon" rel="icon" href="https://ideastore.uz/storage/settings/October2019/jszzWyD5Dvl4Afy2v7w1.png">
   <link rel="stylesheet" href="./src/libraries/OwlCarousel/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="./src/libraries/OwlCarousel/dist/assets/owl.theme.default.css">
   <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap" rel="stylesheet">
@@ -48,10 +49,21 @@
             <li>
               <a href="#">our store</a>
             </li>
-
             <li>
-              <a href="#">login / register</a>
+              <div class="lang-alter">
+                <img class="lang-btn" src="./src/images/tobias-Flag-of-the-United-Kingdom.svg" width="30" alt="">
+                <i class="fa fa-caret-down"></i>
+                <div class="variants">
+                  <div class="ru">
+                    <img src="./src/images/Flag-of-Russia-2016081417.svg"  alt=""> <p> Rus</p>
+                  </div>
+                  <div class="uz">
+                    <img src="./src/images/uzbekistan.svg"  alt="">  <p>  Uz</p>
+                  </div>
+                </div>
+              </div>
             </li>
+            
           </ul>
         </div>
       </div>
@@ -61,71 +73,90 @@
             <img src="https://ideastore.uz/storage/settings/October2019/jszzWyD5Dvl4Afy2v7w1.png" alt="">
           </a>
         </div>
-        <div class="searchbar">
-          <input type="text" class="searchbar" id="search" placeholder="search for products">
-          <input type="button" value="search">
-        </div>
+
         <div class="lovely__items">
-          <div id="app">
-            <el-badge :value="12" :max="10" class="item">
-              <el-button id="button__badge" size="small">
-                <i class="fas fa-heart"></i>
-              </el-button>
-            </el-badge>
-            <el-badge :value="3" :max="10" class="item">
-              <el-button id="button__badge" size="small">
-                <i class="fa fa-shopping-cart"></i>
-              </el-button>
-            </el-badge>
+          <div class="add-post">
+            <a class="login_btn" href="#">
+              <i class="fa fa-user"></i>
+              Login</a>
+            <a class="add-post-btn" href="#">
+              <i class="fa fa-plus-circle"></i>
+              E'lon berish</a>
           </div>
+          <div class="left_side">
+
+            <div class="dropdown dropdown-6">
+              <a class="dropdowbn_btn" href="#!">
+                <i class="fas fa-list-ul"></i>Categories
+                <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-8">
+                  <a class="dropdown_item-1" href="#">
+                    <i class="fa fa-caret-left"></i>Menu item
+                  </a>
+                  <a class="dropdown_item-2" href="#">
+                    <i class="fa fa-caret-left"></i>Menu item
+                  </a>
+                  <a class="dropdown_item-3" href="#">
+                    <i class="fa fa-caret-left"></i>Menu item
+                  </a>
+                  <a class="dropdown_item-4" href="#">
+                    <i class="fa fa-caret-left"></i>Menu item
+                  </a>
+                  <a class="dropdown_item-5" href="#">
+                    <i class="fa fa-caret-left"></i>Menu item
+                  </a>
+                </ul>
+              </a>
+            </div>
+
+          </div>
+
         </div>
       </div>
-      <div class="header_bottom">
-        <div class="left_side">
+      <div class="search-field">
+        <div class="field_wrapper">
+          <form action="#!">
+            <label class="link" for="categories">
+              <i class="fa fa-link"></i>
+            </label>
+            <input list="browsers" name="browser" placeholder="Maxsulot turkumini tanlang" id="categories">
+            <datalist id="browsers">
+              <option value="Samsung">
+              <option value="Apple">
+              <option value="Xiaomi">
+              <option value="Huawei">
+              <option value="Oppo">
+              <option value="Nokia">
+              <option value="Blackberry">
+              <option value="LG">
+              <option value="Motorola">
+              <option value="Vivo">
+              <option value="Simens">
+            </datalist>
+            <label class="ellipsis" for="search">
+              <i class="fas fa-ellipsis-v"></i>
+            </label>
+            <input type="search" name="search" id="search" placeholder="search for products">
 
-          <div class="dropdown dropdown-6">
-            <a class="dropdowbn_btn" href="#!">Categories
-              <i class="fa fa-bars"></i>
-              <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-8">
-                <a class="dropdown_item-1" href="#">Menu item
-                  <i class="fa fa-caret-right"></i>
-                </a>
-                <a class="dropdown_item-2" href="#">Menu item
-                  <i class="fa fa-caret-right"></i>
-                </a>
-                <a class="dropdown_item-3" href="#">Menu item
-                  <i class="fa fa-caret-right"></i>
-                </a>
-                <a class="dropdown_item-4" href="#">Menu item
-                  <i class="fa fa-caret-right"></i>
-                </a>
-                <a class="dropdown_item-5" href="#">Menu item
-                  <i class="fa fa-caret-right"></i>
-                </a>
-              </ul>
-            </a>
-          </div>
-
-        </div>
-
-        <div class="right_side">
-          <a class="bottom-links" href="#">sale!</a>
-          <div class="dropdown-left">
-            <a class="drop-btn" href="#">dropdown
-              <i class="fa fa-chevron-down"></i>
-              <div class="dropdown_menu-left column">
-                <a href="#" class="dropdown_item">Item name</a>
-                <a href="#" class="dropdown_item">Item name</a>
-                <a href="#" class="dropdown_item">Item name</a>
-                <a href="#" class="dropdown_item">Item name</a>
-                <a href="#" class="dropdown_item">Item name</a>
-                <a href="#" class="dropdown_item">Item name</a>
-              </div>
-            </a>
-          </div>
-          <a class="bottom-links" href="#">items</a>
-          <a class="bottom-links" href="#">items</a>
-          <a class="bottom-links" href="#">items</a>
+            <div class="search-wrapper">
+              <label for="location"><i class="fas fa-map-marker-alt"></i></label><input list="regions" name="regions"
+                id="location" placeholder="Joylashuvingizni kiriting">
+              <datalist id="regions">
+                <option value="Tashkent"></option>
+                <option value="Andijan"></option>
+                <option value="Fergana"></option>
+                <option value="Namangan"></option>
+                <option value="Qoraqalpoq"></option>
+                <option value="Buxoro"></option>
+                <option value="Samarqand"></option>
+                <option value="Termiz"></option>
+                <option value="Qashqadaryo"></option>
+                <option value="Xozarm"></option>
+              </datalist>
+            </div>
+            <button type="submit" id="canvas-basic">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
         </div>
       </div>
   </header>
@@ -139,15 +170,19 @@
           <input type="text" class="searchbar" id="search" placeholder="search for products">
           <input type="button" value="search">
         </div>
+        <div class="sticky_buy_btn">
+          <a class="" href="#">
+            <i class="fa fa-plus-circle"></i>
+            E'lon berish</a>
+        </div>
       </div>
     </div>
   </div>
 
-  <main class="site_main">
+  <main class="site_main" >
     <section class="site_hero container">
       <div class="owl-carousel header-carousel">
-        <div class="item"><a href="#!"><img src="./src/images/four.png"
-              alt=""></a></div>
+        <div class="item"><a href="#!"><img src="./src/images/four.png" alt=""></a></div>
         <div class="item"><a href="#!"><img src="./src/images/first.png" alt=""></a></div>
         <div class="item"><a href="#!"><img src="./src/images/second.png" alt=""></a></div>
         <div class="item"><a href="#!"><img src="./src/images/third.jpg" alt=""></a>
@@ -616,8 +651,9 @@
   <script src="//unpkg.com/element-ui@2.14.0/lib/index.js"></script>
   <script src="./src/libraries/OwlCarousel/dist/owl.carousel.min.js"></script>
   <script src="./src/scripts/animatedInput.js"></script>
+  <script src="./src/libraries/granim.js-2.0.0/dist/granim.min.js"></script>
   <script src="./src/scripts/script.js"></script>
-
+ 
 </body>
 
 </html>
